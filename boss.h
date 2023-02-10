@@ -1,9 +1,9 @@
-
 /*
-Character parent class which will create objects of 
-characters that the player can play as. 
+Boss class which will create objects of bosses the 
+player will fight throughout the game
 */
-class Character{
+
+class Boss{
 
     private:
         
@@ -14,7 +14,7 @@ class Character{
         
 
     public:
-        Character(int health, int damage, int defense, int agility){ //Overloaded constructor which can change the type of character
+        Boss(int health, int damage, int defense, int agility){ //Overloaded constructor which can change the type of character
             this -> health = health;
             this -> damage = damage;
             this -> defense = defense;
@@ -35,34 +35,34 @@ class Character{
 };
 
 //Encapsulation method definitions
-int Character::getHealth(){
+int Boss::getHealth(){
     return health;
 }
 
-void Character::setHealth(int health){
+void Boss::setHealth(int health){
     this -> health = health;
 }
 
-int Character::getDamage(){
+int Boss::getDamage(){
     return damage;
 }
 
-void Character::setDamage(int damage){
+void Boss::setDamage(int damage){
     this -> damage = damage;
 }
 
-int Character::getDefense(){
+int Boss::getDefense(){
     return defense;
 }
 
-void Character::setDefense(int defense){
+void Boss::setDefense(int defense){
     this -> defense = defense;
 }
 
-int Character::getAgility(){
+int Boss::getAgility(){
     return agility;
 }
 
-void Character::setAgility(int agility){
+void Boss::setAgility(int agility){
     this -> agility = agility;
 }
